@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W3 | DEMO</title>
-    <!--In-document styling to showcase ID and Class power------>
+    <!--In-document styling to showcase ID and Class power-->
 
     <style>
         /*We are now writing in CSS*/
@@ -18,42 +19,43 @@
          /* div {
             border:3px solid red;
          }*/
-
+        
+         
          /*Select element by ID*/
-        #container{
+        #wrapper{
+
             width:900px;
-            border:3px solid grey;
-            border-radius:10px;
+            border:3px solid black;
+            text-align:center;
+            border-radius:0px;
             margin:auto;    /*Center the div in the page, must use a width to do this*/
-            padding:20px;   /*adds space to all 4 sides between content and border*/
+            padding:20px;   /*adds space to all 4 sides between content and border*/   
+            
+            
         }
 
         #nav {
+
             text-align:center;
+            padding:20px;
 
         }
 
          /*Selecting Elements by Class*/
-        .bg-main {
+        .bg {
 
-            background-color:slategrey;
+            background-color:rgb(23, 69, 129);
             text-align:center;
             padding:30px;
             color:white;
-            border-radius:10px;
-        }
-        .border {
-            border:1px solid white;
-            border-radius:10px;
+            border-radius:0px;
+            
         }
 
-        .section {
-            width:500px;
-            margin:auto;
-            border:1px solid grey;
+        
+        .border {
+            border:1px solid black;
             border-radius:10px;
-            padding:10px;
-            margin-bottom:20px; 
         }
 
         .nav-link {
@@ -74,47 +76,51 @@
 </head>
 <body style="background-color:lightgrey">
 
-    <div id="container"><!-- CONTENT-->
+    <div id="wrapper"><!-- CONTENT-->
 
         <!--This is the container to hold all page content; allows body to handle backgrond-->
    
         <!-- HEADER-->
-        <div id="header" class="border bg-main">
-            <h1>PAGE 3</h1>
+        <div id="header" class="bg">
+            <h1>HOME PAGE</h1>
 
         </div><!-- Close /#Header-->
 
         <div id="nav" class="border">
-            <a href="indexx.html" class="nav-link">HOME !</a>
-            <a href="page2.html" class="nav-link">PAGE 2</a>
-            <a href="page3.html" class="nav-link">PAGE 3</a>
+            <a href="index.html" class="nav-link">HOME </a>
+            <a href="school.html" class="nav-link">SCHOOL</a>
+            <a href="hobbies.html" class="nav-link">HOBBIES</a>
 
         </div><!--Close /# NAV-->
 
+        <hr>
+
         <!-- CONTENT-->
         <div id="main-content" class="border">
-            <h2>Page 3 Content</h2>
+            <h2>- ABOUT ME</h2>
 
-            <div class="section 1">
-                <h3>Section 1</h3>
+            <p>Hello, my name is <strong>Berta</strong> and I have a beautiful family of three. My daughter name's is Chanel and my husband's name's is John. Our favorite thing to do,it is go out for ice-cream at a local farm named <u>"Butterwood farm"</u> here in <i>Connecticut.</i> We also like to enjoy going out shopping at the mall. One day, we would go to Dubai. Overall, My family and I just like to have fun.</p>
+           
 
-            </div><!--Close/ .Section 1-->
+            
+            <img src="images/family-of-three..png" alt="Three People & Three Hearts" style="width:400px;" class="border bg-images">
 
-            <div class="section 2">
-                <h3>Section 2</h3>
+            
 
-            </div><!--Close/ .Section 2-->  
 
-            <div class="section 3">
-                <h3>Section 3</h3>
-            </div><!--Close/ .Section 3-->
+
+            
+
+
 
         </div><!--Close /# main-content-->
 
+        <hr>
 
         <!--FOOTER-->
-        <div id="footer" class="border bg-main">
-            <p>BERTA PUELLO | SE111.2 | 202140 </p>
+        <div id="footer" class="bg">
+            <img src="images/index.validation.png" alt="school validation" style="width:200px;">
+            <p> &copy; BERTA PUELLO | SE111.2 | 202140 </p>
 
 
         </div><!--Close/ #footer-->
