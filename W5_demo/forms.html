@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5 | Forms</title>
+</head>
+<body>
+
+    <form method= "" action="">
+        <!-- This is a textfiend input-->
+        <label for="fName">First Name</label>
+        <input type="text" name="fName" id="fName" placeholder="First Name" maxlength="20" required>
+        <br>
+        <!--Number field-->
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age" required>
+
+        <!--Checkboxes: you can select more than one at a time.-->
+        <p>Favorite Season</p>
+        <input type="checkbox" name="seasin1" value="Winter">
+        <label for="season1">Winter</label>
+        <input type="checkbox" name="seasin2" value="Spring">
+        <label for="season2">Spring</label>
+        <input type="checkbox" name="seasin3" value="Summer">
+        <label for="season3">Summer</label>
+        <input type="checkbox" name="seasin4" value="Winter">
+        <label for="season4">Winter</label>
+        <input type="checkbox" name="seasin4" value="Fall">
+        <label for="season5">Fall</label>
+
+        <br>
+        <!--Drop-down selections: You can you can only select one, it works like a list-->
+        <label for="vehicle">What kind of vihecle you drive/ride?</label>
+        <select name="vihecle">
+
+            <option value="empty">---</option>
+            <option value="car">Car</option>
+            <option value="bike">Bike</option>
+            <option value="motorcycle">Motocycle</option>
+            <option value="boat">Boat</option>
+            <option value="dragon">Dragon</option>
+            <option value="roci">Rocinante</option>
+
+        </select>
+
+        <br>
+        <!--radio buttons: can only select one from a set-->
+        <label for="Program">Are you a programmer or a Network?</label>
+        <br>
+        <input type="radio" name="program" value="programmer">Programmer
+        <br>
+        <input type="radio" name=program value="networker">Networker
+        <br>
+
+        <!--Submit button: What initiates sending the form data somewhere; clicking this will then method & action applied to the form element-->
+        <br><br>
+        <input type="submit" value="SUBMIT">
+
+
+
+    </form>
+    
+</body>
+</html>
