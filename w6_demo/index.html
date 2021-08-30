@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Berta Puello">
+    <title>week 6 | Demo</title>
+</head>
+<body>
+    <!-- we should have something for html content in the body-->
+    <h1>week 6 demo | Javascrip</h1>
+    <!--In document JAvASCRIP-->
+    <!---->
+    <script>
+        
+        //everithing inside the script tag must be written ib JS
+        //creating a variable -- keyword "var : declaration: declaring the var"
+
+        var num1 = 10
+        var num2 = 7 
+
+        //cannot use num1 or num2 in a process without the first being defined (having value stored to them)
+        var sum = num1 + num2
+
+        console.log(sum) //often used foor testing
+                         //no physical display in page, only found in console thru dev tools
+
+        // alert() creates a pop-up in the browser page 
+        //alert() similar to print() in the way that our user can see the info: it pauses the program read, will not continue until user interract with the pop-up
+        
+        alert("hello world!")
+
+        console.log("Today is Thurday.")
+
+        //sum = sum.toFixed(2) --> can do but doesn't just do the decimals for displays, value will retain them indefinitely
+        alert(`the sum is: ${sum.toFixed(2)}`)
+
+        //promt() agains data from the users; all value entered via prompt () are kmow as string unless we state otherwise 
+        var name= prompt(`enter yot name: `)
+
+        console.log(name)
+        var age = Number(prompt(`Hi ${name}! Enter your age: `))
+
+        /* cast as number() to ensure you are
+            working with a numeric value 
+            1. var age = number (prompt(`Hi ${name}!\nEnter your age: `))
+            2. age = number(age)
+            3. dogyears = Nember(age) * 7 
+        */
+
+        console.log(age)
+        var dogyears = age * 7 
+        console.log(dogyears)
+
+    </script>
+    
+</body>
+</html>

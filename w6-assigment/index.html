@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Berta M. Puello-Martinez">
+    <title>W6 | Javascrip</title>
+</head>
+<body>
+
+    <h>Week 6 | Assignment</h>
+    <script>
+      
+      
+        //This is the user hourly pay by hour.
+        var hourly = prompt("Enter your hourly pay?: ")
+        Number(hourly)
+
+        //This is the user's hours worked in "two weeks."
+        var h_worked = prompt("Enter your hours worked for TWO-WEEKS-PERIOD?: ")
+        Number(h_worked)
+
+        //This is the hourly pay multiply by hours worked for two weeks only.
+        var gross = hourly * h_worked * 2 
+
+        //This is the tax deduction by also Uncle Sam's Share
+        var stax = gross * 0.2
+
+        //This is the calcitation for the total net pay for two weeks period. 
+        var net = gross - stax
+
+        //Alert will output the infomation back to the user.
+        alert(`Your total pay for two weeks is: \n${gross}`)
+
+        //Console dispalys:
+        console.log(`Gross pay: ${gross.toFixed(2)}`)
+        console.log(`Uncle Sam's share: ${stax.toFixed(2)}`)
+        console.log(`Ney pay: ${net.toFixed(2)}`)
+
+     //This is the end 
+    </script>
+</body>
+</html>
