@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W7D2 | Javascript Demo</title>
+</head>
+<body>
+
+    <h1>W7D2 - Javascript Selector & Event Demo</h1>
+
+    <form>
+
+        <table>
+
+            <tr>
+                <!--left side: questions-->
+                <td>
+                    <label for="first" class="questions">FIRST: </label>
+                </td>
+
+                <!--right side: input values-->
+                <td>
+                    <input type="text" name="first" id="first">
+
+                </td>
+            </tr>
+
+            <tr>
+                <!--left side: questions-->
+                <td>
+                    <label for="last" class="questions">LAST: </label>
+                </td>
+
+                <!--right side: input values-->
+                <td>
+                    <input type="text" name="last" id="last">
+
+                </td>
+            </tr>
+
+            <tr>
+                <!--left side: questions-->
+                <td>
+                    <label for="age" class="questions">AGE: </label>
+                </td>
+
+                <!--right side: input values-->
+                <td>
+                    <input type="text" name="age" id="age">
+
+                </td>
+            </tr>
+
+            
+            <tr>
+                <!--left side: questions-->
+                
+                <td>
+                    <br>
+                    <br>
+                   <input type="button" id="enter-button" value="ENTER">
+                </td>
+
+                <!--right side: input values-->
+                <td>
+                    
+
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <br>
+    <br>
+
+    <!--a div to hold some info from the form-->
+
+    <h2 id="hello">Hello</h2>
+
+    <div id="info" style="border:1px solid black; width:500px; height:200px;">
+    
+    </div><!--# info-->
+
+    <br>
+    <br>
+    <br>
+
+    <!--not just buttons can have click events!-->
+
+    <p id="me">
+        Click!
+    </p>
+
+    <p id="you">
+        Click!
+    </p>
+
+    <input type="button" id="submit" value="COOL STUFF!">
+
+    <br><br><br><br><br>
+    <p>end</p>
+    <!--IN-DOCUMENT JAVASCRIPT BELOW-->
+    <script>
+        var body = document.querySelector(`body`)
+
+        //comsole.log(body)  --> This is just for testing...
+
+        // We can also add attribut as well.
+        // Create a new variable to hold a new HTML element:
+        var newP = ``
+        newP += `<p style font-size:40px;">`
+        newP += `Hello World! This content was added to the page using JavaScrip!`
+        newP += `</p>`       
+
+        // We can also do it another way:
+        //For example:
+        // var newP = ``
+        // newP += `<p> Hello world this content was added to the page using JavaScript</p>`   ---> Another way to do it. 
+
+        //With the inner attribut we cal add style to the body(newP)
+        //This is how we write the new element to the body of the page:
+        body.innerHTML += newP
+
+        //Adding an event listener to the #enter-button at the end of the mini form
+        document.querySelector(`#enter-button`).addEventListener(`click`, alertInfo)
+
+        //Define function that runs during event; event specific, so requires the event parameter
+        function alertInfo(e)
+        {
+            // we are going to create some Local Variables; their value only exists inside of alertInfo() Function. 
+            var fname = document.querySelector(`#first`).value
+            var lname = document.querySelector(`#last`).value
+            var age = document.querySelector(`#age`).value
+
+            //Ensure that age is a number 
+            age = Number(age)
+
+            console.log(fname)
+            console.log(lname)
+
+            var full = fname + ` ` + lname
+
+            alert(`Hi!, ${full}!`)
+
+            //we can also change #hello in the <body> personaly address the user
+            var hello = document.querySelector(`#hello`)
+            hello.innerHTML += `${full}!`
+
+            //Do some calculations to the age and display into #info
+            var info = document.querySelector(`#info`)
+            var dog_age = (age * 7).toFixed(2)
+            var cat_age = (age * 4).toFixed(2)
+
+
+
+        }
+
+
+    </script>
+	
+</body>
+</html>
+

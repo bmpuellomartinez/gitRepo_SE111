@@ -15,27 +15,29 @@
       
         //This is the user hourly pay by hour.
         var hourly = prompt("Enter your hourly pay?: ")
-        Number(hourly)
+        hourly = Number(hourly)
 
         //This is the user's hours worked in "two weeks."
         var h_worked = prompt("Enter your hours worked for TWO-WEEKS-PERIOD?: ")
-        Number(h_worked)
+        h_worked = Number(h_worked)
 
         //This is the hourly pay multiply by hours worked for two weeks only.
         var gross = hourly * h_worked * 2 
 
-        //This is the tax deduction by also Uncle Sam's Share
+        //This is the tax deduction and also Uncle Sam's Share
         var stax = gross * 0.2
 
         //This is the calcitation for the total net pay for two weeks period. 
         var net = gross - stax
 
         //Alert will output the infomation back to the user.
-        alert(`Your total pay for two weeks is: \n${gross}`)
+        alert(`Your total pay for two weeks is: \n ${gross}`)
 
-        //Console dispalys:
+        //Console displays:
         console.log(`Gross pay: ${gross.toFixed(2)}`)
+        
         console.log(`Uncle Sam's share: ${stax.toFixed(2)}`)
+
         console.log(`Ney pay: ${net.toFixed(2)}`)
 
      //This is the end 
