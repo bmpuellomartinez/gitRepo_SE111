@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Berta M. Puello">
+    <title>WEEEK 8 | DEMO</title>
+</head>
+<body>
+    <h1>WEEK 8 DEMO | ARRAYS & OBJECTS</h1>
+    <div id= "output">
+
+    </div><!--This is a Div nm output-->
+
+    <script>
+
+        //Variables Vs Arrays
+        var firstname1 = `Berta`
+        var lastname1 = `Puello`
+
+        var firstname2 = `Jay`
+        var lastname2 = `aguiar`
+
+        //This is a basic arrays' creation
+        //Should not include different data types.
+        var people = [ 
+            `Katie`,       //`katie[0]
+            `Jay`,         //`jay`[1], etc.....
+            `Antonio`,
+            `cam`, 
+            `Garratte`,
+            `Berta`, 
+            `Dave`
+
+        ]
+
+        people[7] = `Nate`
+            // This is the same as the above!
+            // You can also do it like this example bellow:
+            // var people = [ `Katie`, `Jay`, `Antonio`, `cam`, `Garratte`, `Berta`, `Dave` ]
+            // Arrays use index to access actual value (lots of values, so we need the name + location -- PARALLE ARRAYS)
+            
+            //Associate Arrays -- strings as index, all and each one has to have a unique value:
+
+                    //Example:
+                    //var persons = []
+                    //persons[`Teacher`] = `Katie`
+                    //persons[`firstRow1`] = `Garrett`
+                    //persons[`fisrtRow2`] = `Nate`
+                    
+        var peopleFirst = [
+            `Katie`,       
+            `Jay`,         
+            `Antonio`,
+            `cam`, 
+            `Garratte`,
+            `Berta`, 
+            `Dave`, 
+            `Nate`
+        ]    
+
+        var peopleLast = [
+            `Truchon`,       
+            `Aguiar`,         
+            `Martinez`,
+            `Arbo`, 
+            `Chase`,
+            `Puello-Martinez`, 
+            `Malek`,
+            `Tando`
+        ]
+            // If I change the number from the inside of the variable position, it would also change the location value of the variable list location. 
+        console.log(`First Person: ${peopleFirst[0]} ${peopleLast[0]}`)
+        console.log(`Second Person: ${peopleFirst[1]} ${peopleLast[1]}`)
+
+        console.log(peopleFirst) //show the Arrays length property in console
+        //Processing printing a Arrays -- for loop!
+        for( let index = 0; index < peopleFirst.length; index ++ )
+        {
+            console.log( `Index: ${index}: ${peopleFirst[index]} ${peopleLast[index]}`)
+        }
+
+        //This are basics object creater
+        //They are global. The big benefit is that we can use different data types.
+        var person1 = 
+        {
+            first: `Katie`,   //stings
+            last: `Truchon`,  //sting
+            age: 27,          //some numbers
+            hight: 64,        //some numbers
+            hasPets: true,    //some bull
+            pets: {dog1: `George`, dog2: `Marlowe`, cat: `jack`},                          //object
+            classes: [`SE111.02`, `SE111.12`, `SE126.02`, `GDS128.02`, `GMW251.06`],       //an array
+            //greeting: function(){alert(`Hi there ${this.first} ${this.last}`)}             //and a Function
+
+        }
+        // When accesing an object, you use: objectName[dot] objectPropety(propeties is the value you are trying to access)
+        // EX: person1.fisrt --> pull up the first name stored to person1
+        
+        console.log(`First Name: ${person1.first} Last Name: ${person1.last} Pets: ${person1.hasPets} DOG: ${person1.pets.dog1} Last Classes: ${person1.classes[4]}`)
+        //The object key is to locate values.
+
+        var person2 = 
+        {
+            first: `Antonio`,   //stings
+            last: `Martinez`,  //sting
+            age: 33,          //some numbers
+            hight: 69,        //some numbers
+            hasPets: true,    //some bull
+            pets: { cat: `Tadej`},                          //object
+            classes: [`SE111.02`],       //an array
+           // greeting: function(){alert(`Hi there ${this.first} ${this.last}`)}             //and a Function
+
+        }
+        //person2.greeting()
+
+        for(let key in person1)
+        {
+            // KEY is the propery stuff in object before ':', person1 is object.
+            //this loop will run as many key as they are in person1
+            console.log(key, typeof key) //show the key/prepeties + the data type.
+
+            // You could also build a stuction like this:
+            //example:
+            // if (key === `first`){
+            //  {
+             //    console.log(`${key.toUpperCase()} :${person1[key]}`)    
+            //  }
+            console.log(`${key.toUpperCase()} :${person1[key]}`) //Show the key (capitalized) the value soted there
+
+        }
+        //Since both arrays & object store multiple values, often their entire sets are accessed using For Loops-- for loops for object get a little funny because we do not have i for index.
+
+        //This is how must of the page is organized in HTML
+        //The arrays is the main contaning element to that contain for loop will be the arrays
+        var humans = 
+        [
+            person1,
+            person2
+
+        ]
+        console.log(humans)
+
+        var person3 = {
+            first: `Cam`,   //stings
+            last: `Arbo`,  //sting
+            age: 27,          //some numbers
+            hight: 69,        //some numbers
+            hasPets: true,    //some bull
+            pets: { dog1: `Thor`, dog2: `Valkyrie` },    //This are the object()
+            classes: [`SE111.02`],
+            //greeting: function(){alert(`Hi there ${this.first} ${this.last}`)} 
+
+        }
+        //This is a object a great way to colectd data.
+        //we now humans in array inside of a populated object
+        //add a new person to the people[]
+        humans.push(person3) //just like this apppend() in python
+
+        for(let i = 0; i < humans.length; i++) //humans[i] --> one OBJECT 
+        {//This loop will hold the values in the array (objects)
+            console.log(`INFO: ${humans[i]}---`)
+            for(key in humans[i])
+            {//This loop trought the key in the object
+                console.log(` ${key.toUpperCase()}: ${humans[i][key]}`)
+            }
+            console.log(`-------------`)
+        }
+
+        //Getting the info from the console to the html page.
+        //this is part of the assignment
+        //var output = document.querySelector(`#output`)
+        var output = `` //empty string for the variable
+
+        //Write an object info to the html page's #output div ;]
+        for(let i = 0; i < humans.length; i++)
+        {
+            output += `<h3 id='index-${i}'>Person ${i + 1}: </h3> `
+
+            for(key in humans[i])
+            {
+                //add each propety from object to the string
+                //this is a header for a new person
+                output += `<p><b>${key.toUpperCase()}</b>: ${humans[i][key]} </p>`
+
+            }
+            //console.log(output) this is to text that this works..
+            output += `<hr>`
+
+            function hi(){alert(`Hi there ${humans[i].first} ${humans[i].last}`)}
+            hi()
+        }
+          //add the output variable to the #output div --->  must use the .innerHTML ***
+        document.querySelector(`#output`).innerHTML = output
+
+
+
+
+    </script>
+    
+</body>
+</html>
