@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Week 2 Files</title>
+
+	<style type="text/css">
+		.border{border:1px solid black;}
+		
+	</style>
+</head>
+
+<body>
+</body>
+
+<script type="text/javascript">
+	//Use this Array of objects to complete the assignment.
+	var people =[
+		{   //people[0]; is below; it's an object
+			first:"Jason", //in order to access people[0].first
+		 	last:"Vorhees", 
+		 	credit:"Friday the 13th"
+		},
+		{   //people[1]
+			first:"Freddy", 
+			last:"Krueger", 
+			credit:"A Nightmare on Elm Street" 
+		},
+		{   //people[2]
+			first:"Roger", 
+			last:"Rabbit", 
+			credit:"Who Framed Roger Rabbit" 
+		},
+		{   //people[3]
+			first:"Kevin", 
+			last:"McCallister", 
+			credit:"Home Alone" 
+		},
+		{   //people[4]
+			first:"Godzilla", 
+			last:"King of The Monsters", 
+			credit:"Godzilla" 
+		},
+		{   //people[5]
+			first:"Buzz", 
+			last:"Lightyear", 
+			credit:"Toy Story" 
+		},
+		{   //people[6]
+			first:"Marion", 
+			last:"Cobretti", 
+			credit:"Cobra" 
+		}
+	]
+	var body = document.querySelector(`body`)  //This is a global array
+        console.log(body) //see the actual HTML element & its children (contents) --> //html object view
+        console.dir(body) //see the properties of the body element object         --> //object view 
+        //body.innerHTML += `<div><p>${people[0]}
+
+	for(let i = 0; i < people.length; i++)
+	{
+		var tempDiv = document.createElement(`div`)
+		//body.appendChild(tempDiv)
+
+		tempDiv.setAttribute(`id`, i)
+		tempDiv.setAttribute(`class`, `border`)
+
+		for(key in people[i]) //for each key property in the current object JSOn
+            {
+                //below creates the new paragraph element for each value in object
+                var p = document.createElement(`p`)
+
+                //create the text node to add to the paragraph tag
+                var TextNode = document.createTextNode(people[i][key])
+
+				//Notes:
+				// p.innerHTML = people*
+				
+                //add the text (append!) to the paragraph tag
+				p.appendChild(TextNode)
+                tempDiv.appendChild(p)
+            }
+            
+
+            //add the tempDiv back to the body element
+            body.appendChild(tempDiv)
+
+	}
+
+</script>
+
+</html>
