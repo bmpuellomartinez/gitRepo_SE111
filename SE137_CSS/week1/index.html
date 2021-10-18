@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="BERTA M.PUELLO-MARTINEZ">
+
+    <title>W2 | Bio</title>
+
+</head>
+<style>
+    .bodyy{
+        background-color: lavender; /*This is for the background of the page*/
+        
+    }
+    .h1{
+
+        background-color:burlywood ;
+        color: green;
+        border: 3px solid black;  /*This to change the color of the h1 "Berta M. Puello"*/
+    } 
+    h2{
+        background: burlywood;
+        color:hotpink; /*This is for the header in each nav divs*/
+        border: 3px solid rgb(129, 28, 28);  /*This to change the color of the h1 "Berta M. Puello"*/
+
+    }
+    .hide{
+        display: none; 
+    }
+
+    #footer{
+
+        background-color: chartreuse;
+    }
+   
+   
+</style>
+<body class="bodyy">
+    
+        <h1 class="h1"> Berta M.Puello-Martinez</h1>
+        <hr>
+
+    
+        <!--Nav Section---------------------------------------------------------->
+        <div id="nav">
+
+            <a href="#" id="bio">BIO</a><!--IN PAGE JUMP LINKS ("JUMP" YOU TO A SPECIFIC SECTIONS BASED ON ID)-->
+
+            <a href="#" id="school">SCHOOLING</a>
+
+            <a href="#" id="hobbies">HOBBIES</a>
+
+            <a href="#" id="all">All</a>
+
+
+          
+        </div><!-- / NAV-->
+        <hr>
+
+        <!--MAIN-->
+        <div id="main">
+            <hr>
+
+            <div id="biodiv">
+
+                <h2>My Bio</h2>
+
+                <!--add an absolute path as the image source below-->
+                <img src="https://i2.wp.com/www.progobo.com/wp-content/uploads/2016/11/products-Three-Hearts_Stock.jpg?fit=500%2C500&ssl=1" alt="Three" style="width:400px;">
+    
+                <p>Hello, my name is <strong>Berta</strong> and I have a beutiful familly of three. My daughter name's is Chanel and my husband name's is John. Our favorite thing to do,it is go out for ice-cream at a local farm named <u>"Butterwood farm"</u> here in <i>Connecticut.</i> We also like enjoy going out shopping at the mall. One day, we would to go to Dubai. Overall, My family and I just like to have fun.</p>
+                <p>I am also going to a College named "New England Tech." My major is software developer. One of the things that I love about my future career is creating new programs that could help other. In the main time I am enjoying my path. One day, I am going to graduate and miss everyone. After all, I hope that I acomplished all my dreams.</p>
+
+                <hr>  
+    
+            </div><!--CLOSE BIO----------------------------------------------------------------------->
+    
+            <!--SCHOOLING SECTION--------------------------------------------------------------------->
+    
+            <div id="eddiv" class="hide">
+                <hr>
+                <h2>Schooling</h2>
+    
+                <ul>
+                    <li>New England Institute of Technology</li>
+                    <li>Main College of Art</li>
+                    <li>University of Southern Main</li>
+                </ul>
+                <hr>
+                <!--ADD RELATIVE IMAGE PATH BELOW-->
+                <a href="https://www.neit.edu/?abgrp=a&ctcampaign=7833&ctkwd=new%20england%20technical%20institute&ctcreative=527788756695&ctplacement&ctadpos&ctmatch=b&ctlocid=9003285&cttrgtid=aud-422475894907%3Akwd-302924980749&ctfeedid&ctnwk=g&ctdevice=c&gclid=Cj0KCQjwwY-LBhD6ARIsACvT72OQIGG1v7Z5SrW1uQkCdN8D7SDPNKPl9OuPnIE4f_dotBvQb-xnknEaAlE7EALw_wcB" target="_blank">NEIT WEB</a>
+                <hr>
+            </div><!--- /SCHOOLING SECTION CLOSE ---->
+            
+         
+            <!--HOBBIES SICTION-------------------------------------------------------------------------->
+            <div id="hobbiesdiv" class="hide">
+    
+                <h2>Hobbies</h2>
+                <ol>
+                    <li>familly time</li>
+                    <li>gathering together with friends</li>
+                    <li>eating ice-cream</li>
+                    <li>fun times</li>
+
+                    
+                </ol>
+                <img src="images/Rainbow-Ice-Cream-14-of-16.jpg" alt="Ice" style="width:400px;">
+                <hr>
+
+            </div><!-- / END HOBBIES--> 
+
+            <div id="footer">©2020 yourNameGoesHere | W1 Assignment
+
+            </div><!--FOOTER SECTION-->  
+            <hr>            
+        </div>
+         
+        
+
+        <!--THIS IS WHERE YOU WILL ALSO CREATE A "BACK TO TOP" JUMP LINK-->
+        
+       
+    <script>
+        
+        var biodiv = document.querySelector(`#biodiv`)
+        var eddiv = document.querySelector(`#eddiv`)
+        var hobbiesdiv = document.querySelector(`#hobbiesdiv`) 
+
+
+        var bio = document.querySelector(`#bio`)
+        var ed = document.querySelector(`#school`)
+        var hobbies = document.querySelector(`#hobbies`)
+        var all = document.querySelector(`#all`)
+        
+        var links = document.querySelectorAll(`a`)
+        console.log(links)
+
+        ed.addEventListener(`click`,function(e) {
+        
+            e.preventDefault();
+            biodiv.classList.add(`hide`);
+            eddiv.classList.remove(`hide`);
+            hobbiesdiv.classList.add(`hide`); 
+
+        })
+        bio.addEventListener(`click`, function(e) {
+        
+            e.preventDefault();
+            biodiv.classList.remove(`hide`);
+            eddiv.classList.add(`hide`);
+            hobbiesdiv.classList.add(`hide`); 
+
+        })
+        hobbies.addEventListener(`click`, (e)=>{
+            e.preventDefault();
+            biodiv.classList.add(`hide`);
+            eddiv.classList.add(`hide`);
+            hobbiesdiv.classList.remove(`hide`);
+        })
+
+        all.addEventListener(`click`, (e)=>{
+            e.preventDefault();
+            biodiv.classList.remove(`hide`);
+            eddiv.classList.remove(`hide`);
+            hobbiesdiv.classList.remove(`hide`);
+        })
+
+        //links[0].addEventListener(`click`,function(e) {
+        
+            //e.preventDefault();
+            //biodiv.classList.remove(`hide`);
+            //eddiv.classList.add(`hide`);
+            //hobbiesdiv.classList.add(`hide`); 
+
+        //var bert = function(e) {
+        
+            //e.preventDefault();
+            //biodiv.classList.remove(`hide`);
+            //eddiv.classList.add(`hide`);
+            //hobbiesdiv.classList.add(`hide`);   
+
+    </script>
+  
+
+
+    
+    
+</body>
+</html>

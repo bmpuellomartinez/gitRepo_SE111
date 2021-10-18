@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/*comment how to style links */
+
+div{
+    width:400px;
+    height:400px;
+    background:#666;
+    padding: 20px 5px 1px 0;
+    border: 5px solid black;
+    margin: 20px;
+    box-sizing: border-box
+    /*overflow-y:scroll;*/
+    /*padding-left: 0px;*/
+    /*grids-colomn-:1 <div class=grid-container>*/
+    /*.grid-container div{} */
+
+}
+
+a{
+    padding: 20px;
+    text-align: center;
+    background-color:yellow;
+    display: inline-block;
+    display: center;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+a:link, a:visited{
+    background-color: greenyellow;
+}
+
+a:hover{
+    background-color: blue;
+    transition: all 1s;
+}
+html, body
+
+main{
+    display: grid;
+    grid-template-areas:"header header header bio " 
+                        "bio bio bio"  
+                        "ed ed hobbies";
+    grid-template-areas: 20px;                    
+}
+
+header{
+    grid-area:header
+}
+
+nav{
+
+}
+#bio{
+    grid-area:bio ;
+}
+
+#ed{
+
+    grid-area: ed;
+}
+
+#hobbies{
+
+grid-area: hobbies
+
+}

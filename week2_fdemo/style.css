@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*comment how to style links */
+
+div{
+    width:400px;
+    height:400px;
+    background:#666;
+    padding: 20px 5px 1px 0;
+    border: 5px solid black;
+    margin: 20px;
+    box-sizing: border-box
+    /*overflow-y:scroll;*/
+    /*padding-left: 0px;*/
+
+}
