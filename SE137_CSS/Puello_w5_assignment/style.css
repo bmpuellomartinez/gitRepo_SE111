@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+
+main{
+    background: black;
+    
+}
+
+HEADER{
+    background:   black solid;
+    height: 70px;
+    color: rgb(110, 5, 5);
+    display:flex;
+    justify-content: space-between; 
+    
+}
+
+nav{
+    align-items: center;
+}
+
+section{
+       
+    background: #282828;
+  
+    display:flex;
+    flex-direction: 
+     
+                    'box box box'
+                    'bio bio a'
+                    'hobbies hobbies ed'
+                    'under under under';
+
+    grid-gap:39px;
+    background-color:rgb(133, 133, 133);
+    align-content:center;
+    justify-content: space-between;
+
+}
+
+#top{
+    display:flex;
+    width: 940px;
+    height: 300px;
+    left: 0px;
+    top: 100px;
+    background-image: url("images/banner.png");
+}
+
+#botton_left{
+   
+    display: flex;
+    width: 440px;
+    height: 300px;
+    left: 0px;
+    background: #383737;
+    font-style: normal;
+    font-size: 6px;
+    
+}
+.h2{
+    display: flex; 
+    font-size: 2px;
+}
+.a{
+    display: flex;
+    width: 180px;
+    height: 300px;
+    left: 2px;
+}
+#post{
+    
+}
+.b{
+    width: 15%;
+    height: auto;
+}
+
+#botton_right{
+
+    display: flex;
+    width: 440px;
+    height: 300px;
+    left: 0px;
+    background: #383737;
+    font-style: normal;
+    font-size: 6px;
+    
+
+}
+.c{
+    width: 15%;
+    height: auto;
+}
+
+footer{
+
+    background:   black;
+    height: 50px;
+    color: white;
+    
+    
+}

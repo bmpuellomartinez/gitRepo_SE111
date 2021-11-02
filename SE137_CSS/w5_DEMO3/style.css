@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+main{
+    width: 1024px;
+    position:relative;
+    margin:0 auto;
+    padding: 10px;
+    background-color: black;
+}
+
+header{
+    background-color: purple;
+    height: 300px;
+    width: 1024px;
+    float: left;
+}
+
+section:{
+    width: 1024px;
+    float: left;
+    background-color: powderblue;
+}
+
+#left{
+    float: left;
+    border:2px solid black;
+
+}
+#aside{
+    float:right;
+
+}
+
+footer{
+    width: 1024;
+    clear: both;
+    background-color: brown;
+
+}
+#botton div{
+    float: left;
+    border: 2px black;
+    width: 350px;
+    margin-right: ;
+
+
+}

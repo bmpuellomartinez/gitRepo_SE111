@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+main{
+    background-color: #666;
+    border: 2px solid black;
+    min-height: 200px;
+    width: 1024px;
+    position: relative;
+
+
+}
+div{
+    background-color: orangered;
+    border: 2px solid;
+    height: 200px;
+    width: 300px;
+    overflow-y: hidden;
+    position: relative;
+    top: 30px;
+    margin: 0 auto 0 auto
+
+}
+
+header{
+    position: fixed;
+    top:0px;
+    z-index: 10;
+
+}
+
+a:hover::after{
+    content: "I am a Link";
+}
+
+img{
+    float:right;
+}
