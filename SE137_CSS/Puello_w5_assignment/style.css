@@ -20,12 +20,12 @@ main{
 
 HEADER{
     background: black;
-    height: 70px;
+    height: 80px;
     color: #BB0908;
     display:flex;
     justify-content: space-between; 
     align-items: flex-end;
-    padding-left: 30px;
+    margin-left: 10px;
   
 }
 
@@ -37,7 +37,7 @@ nav{
 section{    
     background: #282828;
     display:grid; 
-    grid-gap: 20px;
+    grid-gap: 0px;
     grid-template-areas: 'image image image image side'
                           'left left right right side'; 
 }
@@ -52,15 +52,12 @@ section{
 #botton_left{
     grid-area: left;
     display: flex;
-    
-    width: 440px;
-    height: 320px;
+    width: 460px;
+    height: 330px;
     margin-left: 11px;
     background: #383737;
     font-family: 'Roboto', sans-serif;
     font-size: 6px;
-    border-top: red solid;
-    
 }
 #h2{
     display: flex;
@@ -98,8 +95,8 @@ span{
     grid-area: right;
     display: flex;  
     align-items: center;
-    width: 440px;
-    height: 320px;
+    width: 450px;
+    height: 330px;
     padding: 30px;
     background: #383737;
     font-style: normal;
@@ -162,7 +159,7 @@ span{
     font-family: 'Roboto', sans-serif;
     color: white;
     background: #383737;
-    width: 355px;
+    width: 340px;
     height: 670px;
     margin-left: 10px;
     border-color: #3f3939 ;
@@ -170,7 +167,7 @@ span{
 }
 .d{
     width: 250px;
-    height: 200x;
+    height: 255px;
     align-content: center;
     margin-left: 35px;
 }
@@ -194,6 +191,6 @@ footer{
 #footer-title{
   
     font-size: 7px;
-    margin-left: 45px;
+    margin-left: 40px;
     border-top: 10px;
 }
