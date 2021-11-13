@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+
+main{
+    background: color #070707;
+    display: flexbox;
+    
+    
+    
+}
+
+body{
+    background-color: #333;
+    justify-content: center;
+    display: flexbox;
+    
+   
+}
+
+header{
+    height: 100px;
+    background-color:  #070707;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 30px 0 30px;
+    color: #bb0908;
+}
+
+h1{
+    font-weight: normal;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Teko', sans-serif;
+    font-size: 48px;
+    align-self: baseline;
+    font-weight: 400;
+}
+
+nav{
+
+    font-size: 60px;
+    align-self: baseline;
+}
+
+section{
+    display: grid;
+    grid-template-areas: 'banner banner banner banner aside'
+                        'l l r r aside';
+    grid-gap: 23px; 
+                      
+}
+
+#banner{
+    grid-area: banner;
+    width: 1170px;
+    height: 388px;
+    background-image: url(images/banner.png);
+    background-size: 100% auto;
+    background-position: 0 -40px;
+}
+
+aside {
+    grid-area: aside;
+    display: flexbox;
+    background-color:#393939;
+    margin-right: 50px;
+    
+    
+    
+}
+
+#sign{
+    align-self: center;
+    width: 315px;
+    height: 254px;
+    padding: 0 5px 0 5px;
+    
+}
+
+#as-text{
+    display: flexbox;
+    justify-content: space-between;
+    color: white;
+    padding: 0 20px 0 20px;
+}
+
+span{
+    color: #fc0303;
+}
+
+#water{
+    display: flexbox;
+    align-self: center;
+    padding: 0 15px 0 15px;
+    width: 170;
+    height: 150px;
+}
+
+.l{
+    grid-area: l;
+    display: flexbox;
+    background-color:#393939;
+    border-top: red solid;
+    width: 500px;
+    height: 320px;
+    
+}
+
+#poster{
+    display: flexbox;
+    width: 210px;
+    height: 318px;
+    float: left;
+    padding: 0 20px 0 0;
+    
+   
+}
+
+#l-text{
+
+    
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flexbox;
+    align-content: flex-end;
+    font-size: 10px;
+    align-content: stretch;
+    padding: 0 15px 0 15px;
+    margin-right: 20px;
+    
+    
+}
+    
+h2{
+    display: flexbox;
+    align-content:center;
+    font-size: 15px;
+    margin-left: 250px;
+    margin-right: 70px;
+    border-bottom: red solid;
+    font-family: 'Rock Salt', cursive;
+    color: #FF1D29;
+}
+
+#ad-text{
+    float: right;
+    margin-right: 20px;
+    display: flexbox;
+    align-self:stretch
+    
+}
+
+
+#am{
+    text-decoration: underline;
+    color:#22C1CB;
+    
+}   
+
+#dvd{
+   width: 117px;
+   height: 160px;
+}   
+
+#price{
+    color: white;
+    text-decoration: underline;
+    font-family: 'Teko', sans-serif;
+    font-size: 60px;
+    padding: 0 20px 0 20px;
+    font-weight: 700;
+    
+    
+}
+
+.r{
+    grid-area: r;
+    display: flexbox;
+    background-color:#393939;
+    border-top: red solid;
+    width: 646px;
+    height: 320px;
+}
+
+#pen{
+    display: block;
+    width: 600px;
+    height: 180px;
+    align-content:center; 
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+#pen-text{
+    font-size: 24;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 20px 0 20px;
+}
+
+footer{
+    height: 80px;
+    background-color:  #070707;
+    display: flex;
+    width: 100%;
+    padding: 0 30px 0 30px;
+    color:white;
+    margin-top: 20px;
+}
+
+#foot-text{
+    margin-top: 30px;
+}

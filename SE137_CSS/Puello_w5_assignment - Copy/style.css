@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Rock+Salt&display=swap" rel="stylesheet');
 
 
 /*Fonts
@@ -15,7 +15,9 @@ body{
     width: 1310px;
 }
 main{
-    background: black;  
+    background: black;
+
+    
 }
 
 HEADER{
@@ -26,7 +28,9 @@ HEADER{
     justify-content: space-between; 
     align-items: flex-end;
     padding-left: 30px;
-  
+    font-family: 'Teko', sans-serif;
+
+    
 }
 
 nav{
@@ -34,33 +38,33 @@ nav{
     padding-inline-end: 25px;
 }
 
-section{    
+section{   
+
     background: #282828;
     display:grid; 
     grid-gap: 20px;
     grid-template-areas: 'image image image image side'
                           'left left right right side'; 
+
+   
 }
 
 #top{
-    
     grid-area: image;
-    height: 300px; 
+
+    height: 300px;
     background-image: url("images/banner.png");
 }
 
 #botton_left{
     grid-area: left;
     display: flex;
-    
-    width: 440px;
-    height: 320px;
-    margin-left: 11px;
+    padding: 5px;
     background: #383737;
     font-family: 'Roboto', sans-serif;
     font-size: 6px;
     border-top: red solid;
-    
+  
 }
 #h2{
     display: flex;
@@ -79,14 +83,15 @@ span{
 }
 .a{
     display: flex;
-    width: 180px;
-    height: 290px;
+   
+    height: 300px;
     left: 2px;
 }
 #post{
 
     float:left;
     background-origin: padding-box;
+    
 }
 .b{
     width: 25%;
@@ -98,8 +103,7 @@ span{
     grid-area: right;
     display: flex;  
     align-items: center;
-    width: 440px;
-    height: 320px;
+  
     padding: 30px;
     background: #383737;
     font-style: normal;
@@ -107,15 +111,15 @@ span{
     color: #FFFFFF; 
     font-family: 'Poppins', sans-serif;
     border-top: red solid;
-    
+ 
 }
 .c{
     
     display: block;
-    width: 90%;
-    height: 50%;  
+    width: 110%;
+    height: 70%;  
     align-content:center; 
-   
+    
 }
 
 #c{
@@ -134,7 +138,8 @@ span{
     flex-direction: column;
     align-items: center;
     font-size: 10px;
-    padding-right: 15px;    
+    padding-right: 15px;
+   
 }
 #amazon{
   
@@ -156,14 +161,13 @@ span{
 }
 
 
+
 #back{
     grid-area: side;
-    background-color: #282828;
+    background-color: #282828; 
     font-family: 'Roboto', sans-serif;
     color: white;
     background: #383737;
-    width: 355px;
-    height: 670px;
     margin-left: 10px;
     border-color: #3f3939 ;
     padding: 10px;
@@ -175,9 +179,9 @@ span{
     margin-left: 35px;
 }
 .bottonP{
-    width: 270px;
-    height: 140px;
-    margin-left: 20px;
+    width: 250px;
+    height: 120px;
+    margin-left: 40px;
 }
 #rightp{
     font-size: 14px;
