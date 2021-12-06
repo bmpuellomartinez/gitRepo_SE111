@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: orange;
+}
+body{
+    
+    background-color: crimson;
+    font-size: 2rem;
+}
+
+main{
+   
+    background-color: cyan;
+    font-size: 1rem;
+}
+div{
+    font-size: 1rem ;
+}
+p{
+    font-size: .25rem;
+}
+span{
+    font-size: 3rem;
+}
+
+
+
+/*
+@media(max-width: 1200px)
+{
+    body
+    {
+        background-color: cornflowerblue;
+    }
+}
+
+@media(max-width: 800px)
+{
+    body
+    {
+        background-color: red;
+    }
+}*/

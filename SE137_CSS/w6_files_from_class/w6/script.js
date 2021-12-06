@@ -1,7 +1,7 @@
 var toggle = document.querySelector(`#toggle`)
 var tray = document.querySelector(`.tray`)
 
-var tabs = document.querySelectorAll(`nav a`)
+var tabs = Array.from(document.querySelectorAll(`nav a`))
 var p = document.querySelector(`#editor p`)
 
 toggle.addEventListener(`click`, (e)=>{
@@ -18,14 +18,11 @@ function selectTab(e)
 {
     for(let i=0; i<tabs.length; i++)
     {
-        tabs[i].style.backgroundColor =`black`;
+        tabs[i].style.backgroundColor =`crimson`;
     }
-    e.target.style.backgroundColor=`grey`;
-    p.innerHTML =  `<a href=#>SE 137</a> > 
-                    <a href=#>W6</a> >
-                    <a href=#>Homework</a> >
-                    <a href=#>Tab ${Array.from(tabs).indexOf(e.target)+1}</a>`
+    e.target.style.backgroundColor=`yellow`;
+    p.innerHTML =  `<a href=#>Words</a> >> 
+                    <a href=#>Words</a> >>
+                    <a href=#>Words</a> >>
+                    <a href=#>Tab ${tabs.indexOf(e.target)+1}</a>`
 }
-
-
-

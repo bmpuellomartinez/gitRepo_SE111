@@ -1,0 +1,89 @@
+html, body
+{
+    margin:0;
+    height:100vh;
+}
+
+body
+{  
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 1920px)
+{
+    
+    h1
+    {
+        font-size: 1.5em;
+    }
+
+    thead
+    {   
+        font-size: 1em;
+    }
+
+    tbody
+    {
+        font-size: 1em
+    }
+
+}
+
+@media(max-width: 1000px)
+{
+    
+
+    h1
+    {
+        font-size: 1.5em;
+    }
+
+    
+
+    thead
+    {   
+        font-size: 1em;
+    }
+
+    tbody
+    {
+        font-size: 1em
+    }
+
+}
+
+@media(max-width: 800px) 
+{
+    h1
+    {
+        font-size: 2em;
+    }
+    thead
+    {   
+        font-size: 1.5em;
+    }
+
+    tbody
+    {
+        font-size: 1.25em
+    }
+
+    td.stat
+    {
+        display: none;
+
+    }
+}   
+table{
+
+    width:80%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+
+td{
+    border-bottom:1px solid black;
+}

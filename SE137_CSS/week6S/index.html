@@ -5,47 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7f2119b9c1.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <main>
-        <header></header>
+
+        <header>
+
+            <div id= "file">
+                <a>File</a>
+            </div>
+            <div id= "edit">
+                <a>Edit</a>
+            </div>
+            <div id= "help">
+                <a>Help</a>
+            </div>
+
+            <div id="title">
+                <a>Week 6 Assingment</a>
+            </div>
+
+            <div id="topcog">
+                <a><i class="fas fa-cog"></i></a> 
+            </div>
+
+        </header>
         <section>
             <aside>
-                <a href="#" id="toggle">Button</a>
-               
+
+                <a href="#" id="toggle"><i class="fas fa-inbox"></i></a> 
+
+                <div id="boxes">
+  
+                    <a><i class="fas fa-th-large"></i></a>
+                    
+                </div>
+
+                <div id="trashcan">
+
+                    <a><i class="fas fa-trash"></i></a>
+
+                </div>
+
+                
+   
             </aside>
+
             <div class="tray">
                 <div id="inner-tray">
-                    <ul>
-                        <li>
-                            List
-                        </li>
-                        <li>
-                            List
-                        </li>
-                    </ul>
+                    <details>
+                        <summary id="titles">Files</summary>
+                        <li><img src="image/paper.png">File 1</li>
+                        <li><img src="image/paper.png">File 2</li>
+                        <li><img src="image/paper.png">File 3</li>
+                        <li><img src="image/paper.png">File 4</li>
+                        <li><img src="image/paper.png">File 5</li>             
+                    </details>
+
+                    <details>
+                        <summary id="titles">Other Stuff</summary>
+                        <div id="dile">
+                            <a><img src="image/fire.png">Stuff 1</a>
+                        </div>
+                        <div id="dile">
+                            <a><img src="image/fire.png">Stuff 2</a>
+                        </div>
+
+                    </details>
                 </div>
             </div>
             <div id="editor">
-                <nav>
-                    <a href="#" id="toggle">Tab 1</a>
-                    <a href="#" id="toggle">Tab 1</a>
-                    <a href="#" id="toggle">Tab 1</a>
-                </nav>  <!--This is for the nivs id-->
-                <nav></nav>
-                <p>
-                    Hello
+                <nav> 
+                        <a href="#"><div><i class="fas fa-plane"></i>Tab 1</div> <i class="fas fa-times"></i></a>
+
+
+                        <a href="#"><div><i class="fas fa-plane"></i>Tab 2</div> <i class="fas fa-times"></i></a>
+
+
+                        <a href="#"><div><i class="fas fa-plane"></i>Tab 3</div> <i class="fas fa-times"></i></a>
+
+              
+                </nav>  <!--This is for the navs id-->
+                
+                <p id="textarea">
+                    <a href="b">SE 137</a> > <a href="b">Week6</a> > <a href="b">Assingment</a>
                 </p>
                 <textarea>
 
                 </textarea>
+
             </div>
         </section>
-        <footer></footer>
+
+        <footer>
+            
+            <a>Berta Puello</a>
+
+            <a><i id= "signal" class="fas fa-signal"></i></a>
+    
+        </footer>
+
     </main>
 
-    <scrip src="script.js"></scrip>
+    <script src="script.js"></script>
 
 </body>
 </html>
