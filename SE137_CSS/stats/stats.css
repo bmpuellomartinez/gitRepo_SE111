@@ -2,6 +2,7 @@ html, body
 {
     margin:0;
     height:100vh;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body
@@ -9,7 +10,14 @@ body
     display:flex;
     flex-direction: column;
     align-items: center;
+    background-color: mediumaquamarine;
 }
+h1
+{
+    font-size: 1.5em;
+    background-color: mediumturquoise;
+}
+
 
 @media (max-width: 1920px)
 {
@@ -22,11 +30,15 @@ body
     thead
     {   
         font-size: 1em;
+        
     }
 
     tbody
     {
         font-size: 1em
+    }
+    thead tr:last-child{
+        display:none;
     }
 
 }
@@ -40,7 +52,6 @@ body
         font-size: 1.5em;
     }
 
-    
 
     thead
     {   
@@ -51,14 +62,22 @@ body
     {
         font-size: 1em
     }
+    thead tr:first-child{
+        display:none;
+    }
+    thead tr:last-child{
+        display: table-row;
+
+    }
 
 }
 
-@media(max-width: 800px) 
+@media(max-width: 500px) 
 {
     h1
     {
-        font-size: 2em;
+        font-size: 1.5em;
+        background-color: mediumturquoise;
     }
     thead
     {   
@@ -69,21 +88,31 @@ body
     {
         font-size: 1.25em
     }
+    thead tr:first-child{
+        display: table-row;
+    }
 
-    td.stat
-    {
-        display: none;
+    thead tr:last-child{
+        display:none;
 
     }
+    .stat{
+        display:none;
+    }
+
+   
 }   
 table{
 
     width:80%;
     height: 100%;
     border-collapse: collapse;
+    background-color: lightcyan;
 }
-
-
 td{
     border-bottom:1px solid black;
 }
+thead{
+    background-color: mediumturquoise;
+}
+
